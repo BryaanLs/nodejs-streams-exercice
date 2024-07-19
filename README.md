@@ -40,9 +40,10 @@ Após ter instalado as dependências do projeto, utilize a lib `random-words` pa
 
 - Dicas:
 
-  1.  Utilize os métodos `fs.createWriteStream` do modulo `fs` do NodeJS para escrever os dados em um formato csv (use a , como separador de palavras e colunas)
-  2.  Uma função geradora pode servir muito bem para passar os dados para a `writeStream` na pipe ou pipeline de processamento.
-  3.  Tente deixar a forma como esse csv é escrito, de forma dinâmica, podendo passar numeros pequenos como 2 por exemplo ou até mesmo numeros gigantes, como 1e6, 1e7 etc.
+  1.  Utilize os métodos `fs.createWriteStream` do modulo `fs` do NodeJS para escrever os dados em um formato csv (use a "," como separador de palavras e colunas)
+  2.  O header (as colunas) da planilha devem ir de A-Z
+  3.  Uma função geradora pode servir muito bem para passar os dados para a `writeStream` na pipe ou pipeline de processamento.
+  4.  Tente deixar a forma como esse csv é escrito, de forma dinâmica, podendo passar numeros pequenos como 2 por exemplo ou até mesmo numeros gigantes, como 1e6, 1e7 etc.
 
 - Regras:
   1.  Faça uma tratativa para o caso do numero se linhas enviado no parametro da função ser 0 (é impossivel manipular 0 palavras de 0 linhas de csv né? :D)
