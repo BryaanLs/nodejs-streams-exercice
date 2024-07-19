@@ -20,11 +20,19 @@ const generateWords: GenerateWordsFn = function* (rowsToGen, wordsToGen) {
   }
 };
 
-const generator = generateWords(10, 26);
+const generator = generateWords(100, 26);
 const outputPath = path.resolve("src", "files", "csvWords.csv");
 const csvWriter = createWriteStream(outputPath);
 
 const columns: string = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z\n";
 csvWriter.write(columns);
 
-await pipeline(generator, csvWriter);
+pipeline(generator, csvWriter)
+  .then(() => {
+    console.log("----".repeat(15));
+    console.log("csvWords.csv File generated with success!");
+    console.log("----".repeat(15));
+  })
+  .catch((err) => {
+    console.log("Error on generate csvWords", err);
+  });
