@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev:fakeEtl": "tsx ./src/fakeEtl.ts",
-    "dev:generateCsv": "tsx ./src/generateCsv.ts"
+    "dev:generateCsv": "tsx ./src/generateCsv.ts",
+    "lucca:fakeEtl": "node ./lucca/fakeEtl.js",
+    "lucca:generateCsv": "node ./lucca/generateCsv.js"
   },
   "keywords": [],
   "author": "",
@@ -17,10 +19,5 @@
   },
   "engines": {
     "node": "20.15.1"
-  },
-  "devDependencies": {
-    "@types/node": "^20.14.11",
-    "tsx": "^4.16.2",
-    "typescript": "^5.5.3"
   }
 }
