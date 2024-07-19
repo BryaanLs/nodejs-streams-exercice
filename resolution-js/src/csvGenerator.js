@@ -19,4 +19,12 @@ function* generator(lines) {
 	}
 }
 
-await pipeline(generator(1), writer);
+export async function generateCsv(lines) {
+	await pipeline(generator(lines), writer)
+		.then(() => {
+			console.log("Pipeline processed successfully!");
+		})
+		.catch((error) => {
+			console.error("Pipeline processed successfully: ", error);
+		});
+}
