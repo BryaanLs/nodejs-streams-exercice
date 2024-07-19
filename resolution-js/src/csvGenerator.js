@@ -3,7 +3,7 @@ import path from "node:path";
 import { pipeline } from "node:stream/promises";
 import { generate } from "random-words";
 
-const csvPath = path.resolve("files", "output.csv");
+const csvPath = path.resolve("resolution-js", "src", "files", "output.csv");
 const writer = fs.createWriteStream(csvPath);
 const header =
 	"a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z\n";

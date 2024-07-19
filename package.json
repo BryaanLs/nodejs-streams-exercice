@@ -5,7 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"dev:fakeEtl": "tsx ./src/fakeEtl.ts",
-		"dev:generateCsv": "tsx ./src/generateCsv.ts"
+		"dev:generateCsv": "tsx ./src/generateCsv.ts",
+		"dev:resolution": "node ./resolution-js/src/main.js"
 	},
 	"keywords": [],
 	"author": "",
