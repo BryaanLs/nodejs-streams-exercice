@@ -15,6 +15,7 @@
   "description": "",
   "dependencies": {
     "csv-parser": "^3.0.0",
+    "ntl": "^5.1.0",
     "random-words": "^2.0.1"
   },
   "engines": {
