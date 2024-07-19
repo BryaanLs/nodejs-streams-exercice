@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev:fakeEtl": "tsx ./src/fakeEtl.ts",
-    "dev:generateCsv": "tsx ./src/generateCsv.ts"
+    "dev:generateCsv": "tsx ./src/generateCsv.ts",
+    "dev:convertCsvToJson": "tsx ./src/convertCsvToJson.ts",
+    "fullExec": "tsx ./src/fullExec.ts"
   },
   "keywords": [],
   "author": "",
