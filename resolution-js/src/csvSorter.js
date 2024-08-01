@@ -52,6 +52,6 @@ export async function sortJsonIntoCsv() {
 			console.log("Pipeline processed successfully!");
 		})
 		.catch((error) => {
-			console.error("Pipeline processed successfully: ", error);
+			console.error("Pipeline processed with error: ", error);
 		});
 }
