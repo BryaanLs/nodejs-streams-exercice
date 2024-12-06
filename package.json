@@ -1,26 +1,27 @@
 {
-  "name": "streams-csv",
-  "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev:fakeEtl": "tsx ./src/fakeEtl.ts",
-    "dev:generateCsv": "tsx ./src/generateCsv.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "csv-parser": "^3.0.0",
-    "random-words": "^2.0.1"
-  },
-  "engines": {
-    "node": "20.15.1"
-  },
-  "devDependencies": {
-    "@types/node": "^20.14.11",
-    "tsx": "^4.16.2",
-    "typescript": "^5.5.3"
-  }
+	"name": "resolution",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev:fakeEtl": "tsx ./src/fakeEtl.ts",
+		"dev:generateCsv": "tsx ./src/generateCsv.ts",
+		"dev:resolution": "node ./resolution-js/src/main.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"csv-parser": "^3.0.0",
+		"random-words": "^2.0.1"
+	},
+	"engines": {
+		"node": "20.16.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.11",
+		"tsx": "^4.16.2",
+		"typescript": "^5.5.3"
+	}
 }
